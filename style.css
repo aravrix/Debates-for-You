@@ -5,7 +5,7 @@ html, body {
     flex-direction: column;
     margin: 0;
     font-family: system-ui, sans-serif;
-    background: #1e293b;
+    background: #e0f2fe;
     color: #1c1c1e;
     scroll-behavior: smooth;
 }
