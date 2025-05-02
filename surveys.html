@@ -6,30 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Dfy - Debates for you, Surveys, More</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
 </head>
 <body>
     <body>
         <main class="main-content">
-        <nav class="navbar">
-        <div class="logo">Dfy</div>
-        <button class="menu-icon">&#9776;</button>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="surveys.html">Surveys</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>    
+            <nav class="navbar">
+                <div class="logo">Dfyu</div>
+                <button class="menu-icon" onclick="toggleMenu()">☰</button>
+                <ul class="nav-links" id="navLinks">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="surveys.html">Surveys</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="certificate.html">Verify Certificate</a></li>
+                </ul>
+              </nav>
     <!-- Survey Results Section -->
     <section class="survey-results">
         <h2 id="survey-results">Survey Result Board</h2>
         <ul class="results-list">
-            <li class="result-item"><a href="#">Survey 1: Debate participation increased confidence in 85% of students.</a></li>
-            <li class="result-item"><a href="#">Survey 2: 73% believe debates should be a part of the curriculum.</a></li>
-            <li class="result-item"><a href="#">Survey 3: 90% felt debates helped improve critical thinking.</a></li>
-            <li class="result-item"><a href="#">Survey 4: 65% want weekly debate sessions.</a></li>
-            <li class="result-item"><a href="#">Survey 5: 78% support surveys before debates for research data.</a></li>
-            <li class="result-item"><a href="#">Survey 6: 60% prefer panel-style debates over one-on-one formats.</a></li>
+            <li class="result-item"><a href="./surveys/bully-survey-1.html">Survey 1: If a bully is bullying someone, do you try to stop them or just watch the person getting bullied suffer?</a></li>
         </ul>
         <button class="load-more" id="loadMoreResults">Load More</button>
     </section>
