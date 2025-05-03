@@ -20,7 +20,7 @@ html, body {
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
-  background: #000; /* unified black background */
+  background: #e0f2fe; 
   color: #fff;       /* white text */
   display: flex;
   flex-direction: column;
@@ -141,7 +141,7 @@ html, body {
 /* ===== SURVEY RESULTS ===== */
 .survey-results {
   padding: 4rem 1rem;
-  background: #111827;
+  background: #548aff;
 }
 .survey-results h2 {
   text-align: center;
@@ -327,21 +327,25 @@ button:hover {
       <button onclick="verifyCode()">Verify</button>
       <div id="verify-message"></div>
     </div>
+    <br>
+
 
     <div class="certificate-body" id="certificate-body">
       <div class="certificate-item">
         <label>Name:</label>
         <p id="person-name">---</p>
       </div>
-
+<br>
       <div class="certificate-item">
         <label>Verified ID:</label>
         <p id="verified-id">---</p>
       </div>
+      <br>
 
       <div class="certificate-image">
         <img id="certificate-img" src="" alt="Certificate Image">
       </div>
+      <br>
 
       <div class="certificate-footer">
         <p>Verified on: <span id="verification-date">---</span></p>
