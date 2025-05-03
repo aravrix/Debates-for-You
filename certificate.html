@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dfy Certificate Verification</title>
+  <title>Dfyu Certificate Verification</title>
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
   <link rel="manifest" href="./assets/site.webmanifest">
+  <meta name="description" content="Verify your Dfy certificate easily. Enter your verification code to view your certificate." />
   <style>
     /* ===== RESET & BASE ===== */
 * {
@@ -365,64 +366,62 @@ button:hover {
         image: "./assets/cert2.png"
       },
     };
-
+  
     function verifyCode() {
-      const input = document.getElementById('code-input').value.trim();
+      const input = document.getElementById('code-input').value.trim().toUpperCase();
       const message = document.getElementById('verify-message');
       const certificateBody = document.getElementById('certificate-body');
-      const nameField = document.getElementById('person-name');
-      const idField = document.getElementById('verified-id');
-      const dateField = document.getElementById('verification-date');
-      const certImage = document.getElementById('certificate-img');
-      const confetti = document.getElementById('confetti');
-
-      confetti.innerHTML = '';
-
+      
       if (validCodes[input]) {
-        const user = validCodes[input];
-        nameField.innerText = user.name;
-        idField.innerText = user.id;
-        dateField.innerText = user.date;
-        certImage.src = user.image;
-
-        message.style.color = "lime";
-        message.innerText = "✅ Code Verified Successfully!";
+        const data = validCodes[input];
+        document.getElementById('person-name').textContent = data.name;
+        document.getElementById('verified-id').textContent = data.id;
+        document.getElementById('verification-date').textContent = data.date;
+        document.getElementById('certificate-img').src = data.image;
+  
+        message.textContent = "";
         certificateBody.style.display = "block";
-
         setTimeout(() => {
           certificateBody.style.opacity = 1;
         }, 100);
-
-        startConfetti();
+  
+        launchConfetti();
       } else {
         message.style.color = "red";
-        message.innerText = "❌ Invalid Code. Please try again.";
-        certificateBody.style.display = "none";
+        message.textContent = "Invalid or unrecognized verification code.";
+        certificateBody.style.opacity = 0;
+        setTimeout(() => {
+          certificateBody.style.display = "none";
+        }, 500);
       }
     }
-
-    function startConfetti() {
-      for (let i = 0; i < 100; i++) {
+  
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("active");
+    }
+  
+    function launchConfetti() {
+      const confettiContainer = document.getElementById('confetti');
+      confettiContainer.innerHTML = '';
+      confettiContainer.style.display = 'block';
+  
+      for (let i = 0; i < 50; i++) {
         const piece = document.createElement('div');
         piece.classList.add('confetti-piece');
-        piece.style.backgroundColor = Math.random() > 0.5 ? 'yellow' : 'white';
-        piece.style.left = Math.random() * window.innerWidth + 'px';
-        piece.style.animationDuration = (Math.random() * 3 + 2) + 's';
-        piece.style.animationDelay = Math.random() * 2 + 's';
-        document.getElementById('confetti').appendChild(piece);
+        piece.style.left = `${Math.random() * 100}%`;
+        piece.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`;
+        piece.style.animationDelay = `${Math.random()}s`;
+        confettiContainer.appendChild(piece);
       }
-
-      document.getElementById('confetti').style.display = 'block';
-
+  
       setTimeout(() => {
-        document.getElementById('confetti').style.display = 'none';
-      }, 10000);
-    }
-
-    function toggleMenu() {
-      const nav = document.getElementById('navLinks');
-      nav.classList.toggle('active');
+        confettiContainer.style.display = 'none';
+        confettiContainer.innerHTML = '';
+      }, 3000);
     }
   </script>
+  
+  
 </body>
 </html>
