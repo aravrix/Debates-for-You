@@ -299,7 +299,7 @@ button:hover {
   </style>
 </head>
 <body>
-
+  <main class="main-content">
   <nav class="navbar">
     <div class="logo">Dfyu</div>
     <button class="menu-icon" onclick="toggleMenu()">☰</button>
@@ -354,7 +354,12 @@ button:hover {
   </div>
 
   <div class="confetti" id="confetti"></div>
-
+</main>
+ <!-- Footer -->
+ <footer class="footer">
+  <span>Dfy &copy; 2025</span>
+  <a href="https://discord.gg/JMa7GXZUTH" target="_blank" class="discord-icon">Discord</a>
+</footer>
   <script>
     const validCodes = {
       "ABR001": {
@@ -372,33 +377,34 @@ button:hover {
     };
   
     function verifyCode() {
-      const input = document.getElementById('code-input').value.trim().toUpperCase();
-      const message = document.getElementById('verify-message');
-      const certificateBody = document.getElementById('certificate-body');
-      
-      if (validCodes[input]) {
-        const data = validCodes[input];
-        document.getElementById('person-name').textContent = data.name;
-        document.getElementById('verified-id').textContent = data.id;
-        document.getElementById('verification-date').textContent = data.date;
-        document.getElementById('certificate-img').src = data.image;
-  
-        message.textContent = "";
-        certificateBody.style.display = "block";
-        setTimeout(() => {
-          certificateBody.style.opacity = 1;
-        }, 100);
-  
-        launchConfetti();
-      } else {
-        message.style.color = "red";
-        message.textContent = "Invalid or unrecognized verification code.";
-        certificateBody.style.opacity = 0;
-        setTimeout(() => {
-          certificateBody.style.display = "none";
-        }, 500);
-      }
-    }
+  const input = document.getElementById('code-input').value.trim(); // case-sensitive now
+  const message = document.getElementById('verify-message');
+  const certificateBody = document.getElementById('certificate-body');
+
+  if (validCodes[input]) {
+    const data = validCodes[input];
+    document.getElementById('person-name').textContent = data.name;
+    document.getElementById('verified-id').textContent = data.id;
+    document.getElementById('verification-date').textContent = data.date;
+    document.getElementById('certificate-img').src = data.image;
+
+    message.textContent = "";
+    certificateBody.style.display = "block";
+    setTimeout(() => {
+      certificateBody.style.opacity = 1;
+    }, 100);
+
+    launchConfetti();
+  } else {
+    message.style.color = "red";
+    message.textContent = "Invalid or unrecognized verification code.";
+    certificateBody.style.opacity = 0;
+    setTimeout(() => {
+      certificateBody.style.display = "none";
+    }, 500);
+  }
+}
+
   
     function toggleMenu() {
       const navLinks = document.getElementById("navLinks");
