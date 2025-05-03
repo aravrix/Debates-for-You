@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Allow: /posts/
+Allow: /surveys/
+Allow: /assets/
+
+Sitemap: https://dfyu.in/sitemap.xml/
