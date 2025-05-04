@@ -297,16 +297,20 @@
 body.nav-open .announcement-banner {
   display: none;
 }
+/* Ensure banner is not hidden due to other CSS */
 .announcement-banner {
-  width: 100%;
-  background-color: #111;
-  color: #fff;
-  overflow: hidden;
-  white-space: nowrap;
-  border-bottom: 2px solid #ff4d4d;
-  z-index: 999;
-  position: relative;
+  display: block !important;
+  width: 100% !important;
+  background-color: #111 !important;
+  color: #fff !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  border-bottom: 2px solid #ff4d4d !important;
+  z-index: 999 !important;
+  position: relative !important;
+  padding: 10px 0 !important;
 }
+
 
 .announcement-banner .marquee {
   display: inline-block;
