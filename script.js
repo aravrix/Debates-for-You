@@ -34,3 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.classList.toggle('active');
     });
 });
+function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('show');  // toggle visibility
+    document.body.classList.toggle('nav-open');  // for hiding banner
+  }
+  
