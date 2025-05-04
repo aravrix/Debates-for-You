@@ -297,9 +297,7 @@
 body.nav-open .announcement-banner {
   display: none;
 }
-/* Ensure banner is not hidden due to other CSS */
 .announcement-banner {
-  display: block !important;
   width: 100% !important;
   background-color: #111 !important;
   color: #fff !important;
