@@ -11,8 +11,98 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png" />
   <link rel="manifest" href="../assets/site.webmanifest" />
   <meta name="description" content="A detailed report on the 2025 India-Pakistan conflict timeline: from the Pahalgam attack to Operation Sindoor and final ceasefire." />
+
+  <!-- Plyr CSS -->
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
+  <style>
+  .post-content img,
+  .post-content video {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .video-wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .video-wrapper video {
+    width: auto;
+    max-height: 80vh;
+    max-width: 100%;
+    object-fit: contain;
+    aspect-ratio: auto;
+  }
+
+  /* Force stacking vertically */
+  .plyr-player {
+    display: block;
+    margin: 0 auto;
+  }
+   .modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .modal-box {
+    background: white;
+    padding: 30px 20px;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  .modal-box h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #c0392b;
+  }
+
+  .modal-box p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  #continue-btn {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  #continue-btn:hover {
+    background: #555;
+  }
+  body.modal-open {
+  overflow: hidden;
+}
+</style>
+
 </head>
 <body>
+  <div id="content-warning-modal" class="modal-overlay">
+  <div class="modal-box">
+    <h2>⚠️ Content Warning</h2>
+    <p>This post contains graphic videos and images that may be disturbing, especially for children. Viewer discretion is advised.</p>
+    <button id="continue-btn">Continue</button>
+  </div>
+</div>
   <main class="main-content">
     <nav class="navbar">
       <div class="logo">Dfyu</div>
@@ -47,13 +137,23 @@
               <strong>Historical context:</strong> Pakistan has long been associated with terrorist organizations like Osama bin Laden, Lashkar-e-Taiba, and D Company. India has accused Pakistan of cross-border terrorism for decades.
             </p>
             <p><strong>Sources:</strong> 
-              <a href="#" target="_blank">Source 1</a>, 
-              <a href="#" target="_blank">Source 2</a>, 
-              <a href="#" target="_blank">Source 3</a>, 
-              <a href="#" target="_blank">Source 4</a>
+              <a href="https://en.m.wikipedia.org/wiki/2025_Pahalgam_attack" target="_blank">Source 1</a>, 
+              <a href="https://en.m.wikipedia.org/wiki/D-Company" target="_blank">Source 2</a>, 
+              <a href="https://en.m.wikipedia.org/wiki/Osama_bin_Laden" target="_blank">Source 3</a>, 
+              <a href="https://en.m.wikipedia.org/wiki/Lashkar-e-Taiba" target="_blank">Source 4</a>
             </p>
             <p><strong>⚠️ TW:</strong> Gore, bloodied uncensored images.</p>
-            <img src="../assets/images/pahalgam-attack.jpg" alt="Pahalgam aftermath" style="width: 100%; max-width: 600px; margin-top: 10px;" />
+<br>
+            <div class="video-wrapper">
+              <video class="plyr-player" controls>
+                <source src="../assets/pahalgam-aftermath-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-wrapper">
+              <video class="plyr-player" controls>
+                <source src="../assets/pahalgam-aftermath-2.mp4" type="video/mp4" />
+              </video>
+            </div>
 
             <hr style="margin: 20px 0;" />
 
@@ -62,7 +162,7 @@
               Following the massacre, Pakistan reportedly violated ceasefire agreements on the mountainous borders, increasing military tension.
             </p>
             <p><strong>Source:</strong> 
-              <a href="#" target="_blank">Ceasefire Violation Report</a>
+              <a href="https://timesofindia.indiatimes.com/india/pakistan-violates-ceasefire-for-ninth-consecutive-day-indian-army-gives-prompt-response/articleshow/120839264.cms" target="_blank">Ceasefire Violation Report</a>
             </p>
 
             <hr style="margin: 20px 0;" />
@@ -73,9 +173,8 @@
               <strong>Name Origin:</strong> "Sindoor" symbolizes the sacred red powder worn by Indian married women—chosen to honor the widows from the Pahalgam attack.
             </p>
             <p><strong>Source:</strong> 
-              <a href="#" target="_blank">Operation Sindoor Details</a>
+              <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2127370" target="_blank">Operation Sindoor Details</a>
             </p>
-            <video src="../assets/videos/operation-sindoor.mp4" controls style="width: 100%; max-width: 600px; margin-top: 10px;"></video>
 
             <hr style="margin: 20px 0;" />
 
@@ -83,10 +182,10 @@
             <p>
               Terrorist shelling in Poonch, Jammu—believed to be linked with Pakistan—killed 15 civilians and injured 43 others, including 2 children.
             </p>
-            <p><strong>⚠️ TW:</strong> Upsetting visual content: blood, destruction.</p>
-            <img src="../assets/images/poonch1.jpg" alt="Poonch Attack Image 1" style="width: 100%; max-width: 600px;" />
-            <img src="../assets/images/poonch2.jpg" alt="Poonch Attack Image 2" style="width: 100%; max-width: 600px; margin-top: 10px;" />
-            <img src="../assets/images/poonch3.jpg" alt="Poonch Attack Image 3" style="width: 100%; max-width: 600px; margin-top: 10px;" />
+            <p><strong>⚠️ TW:</strong> Upsetting visual content: blood, destruction.</p><br>
+            <img src="../assets/poonch-1.webp" alt="Poonch Attack Image 1" />
+            <img src="../assets/poonch-2.webp" alt="Poonch Attack Image 2" />
+            <img src="../assets/poonch-3.webp" alt="Poonch Attack Image 3" />
 
             <hr style="margin: 20px 0;" />
 
@@ -94,10 +193,18 @@
             <p>
               Pakistan launched over 50 missiles into India; Indian air defense successfully intercepted most. Indian retaliation followed, resulting in significant damage and casualties on both sides. Attacks continued overnight on both days.
             </p>
-            <p><strong>Source:</strong> 
-              <a href="#" target="_blank">Airstrike Report Video</a>
-            </p>
-            <video src="../assets/videos/airstrikes.mp4" controls style="width: 100%; max-width: 600px;"></video>
+            <p><strong>Source:</strong> Attached Videos</p>
+<br>
+            <div class="video-wrapper">
+              <video class="plyr-player" controls>
+                <source src="../assets/pak-ind-airstrike-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-wrapper">
+              <video class="plyr-player" controls>
+                <source src="../assets/pak-ind-airstrike-2.mp4" type="video/mp4" />
+              </video>
+            </div>
 
             <hr style="margin: 20px 0;" />
 
@@ -116,6 +223,33 @@
     <a href="https://discord.gg/JMa7GXZUTH" target="_blank" class="discord-icon">Discord</a>
   </footer>
 
+  <!-- Plyr JS -->
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <script>
+    const players = Plyr.setup('.plyr-player');
+  </script>
+
   <script src="../script.js"></script>
+ <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('content-warning-modal');
+    const continueBtn = document.getElementById('continue-btn');
+
+    if (!sessionStorage.getItem('graphicWarningShown')) {
+      modal.style.display = 'flex';
+      document.body.classList.add('modal-open');
+
+      continueBtn.addEventListener('click', function () {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+        sessionStorage.setItem('graphicWarningShown', 'true');
+      });
+    } else {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+
+
 </body>
 </html>
