@@ -39,4 +39,5 @@ function toggleMenu() {
     nav.classList.toggle('show');  // toggle visibility
     document.body.classList.toggle('nav-open');  // for hiding banner
   }
+
   
