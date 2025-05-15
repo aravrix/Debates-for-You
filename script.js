@@ -39,21 +39,5 @@ function toggleMenu() {
     nav.classList.toggle('show');  // toggle visibility
     document.body.classList.toggle('nav-open');  // for hiding banner
   }
- document.addEventListener('DOMContentLoaded', function () {
-    const modal = document.getElementById('content-warning-modal');
-    const continueBtn = document.getElementById('continue-btn');
 
-    if (!sessionStorage.getItem('graphicWarningShown')) {
-      modal.style.display = 'flex';
-      document.body.classList.add('modal-open');
-
-      continueBtn.addEventListener('click', function () {
-        modal.style.display = 'none';
-        document.body.classList.remove('modal-open');
-        sessionStorage.setItem('graphicWarningShown', 'true');
-      });
-    } else {
-      modal.style.display = 'none';
-    }
-  });
   
