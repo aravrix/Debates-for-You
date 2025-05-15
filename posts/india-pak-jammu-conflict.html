@@ -15,84 +15,6 @@
   <!-- Plyr CSS -->
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 
-  <style>
-  .post-content img,
-  .post-content video {
-    width: 90%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-
-  .video-wrapper {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .video-wrapper video {
-    width: auto;
-    max-height: 80vh;
-    max-width: 100%;
-    object-fit: contain;
-    aspect-ratio: auto;
-  }
-
-  /* Force stacking vertically */
-  .plyr-player {
-    display: block;
-    margin: 0 auto;
-  }
-   .modal-overlay {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.75);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-  }
-
-  .modal-box {
-    background: white;
-    padding: 30px 20px;
-    max-width: 500px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  }
-
-  .modal-box h2 {
-    margin-bottom: 15px;
-    font-size: 22px;
-    color: #c0392b;
-  }
-
-  .modal-box p {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-
-  #continue-btn {
-    padding: 10px 20px;
-    background: #333;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-
-  #continue-btn:hover {
-    background: #555;
-  }
-  body.modal-open {
-  overflow: hidden;
-}
-</style>
 
 </head>
 <body>
@@ -230,26 +152,5 @@
   </script>
 
   <script src="../script.js"></script>
- <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const modal = document.getElementById('content-warning-modal');
-    const continueBtn = document.getElementById('continue-btn');
-
-    if (!sessionStorage.getItem('graphicWarningShown')) {
-      modal.style.display = 'flex';
-      document.body.classList.add('modal-open');
-
-      continueBtn.addEventListener('click', function () {
-        modal.style.display = 'none';
-        document.body.classList.remove('modal-open');
-        sessionStorage.setItem('graphicWarningShown', 'true');
-      });
-    } else {
-      modal.style.display = 'none';
-    }
-  });
-</script>
-
-
 </body>
 </html>
