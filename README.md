@@ -1,4 +1,4 @@
-# 🎤 Debates for You (Dfy)
+# 🎤 Debates for You (Dfyu)
 
 Welcome to **Debates for You**, where opinions collide, minds spark, and surveys speak louder than silence 🧠💥. This is a chill, black-and-white themed website for hosting debates, surveys, blog posts, and pure idea explosions — made with love in HTML, CSS & JavaScript.
 
