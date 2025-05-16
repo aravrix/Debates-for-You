@@ -1,38 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
 <url>
-	<loc>https://dfyu.in/</loc>
-	<lastmod>2025-05-03T05:22:36+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>https://dfyu.in/</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-	<loc>https://dfyu.in/news</loc>
-	<lastmod>2025-05-03T05:22:38+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>https://dfyu.in/news</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-	<loc>https://dfyu.in/surveys</loc>
-	<lastmod>2025-05-03T05:22:38+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>https://dfyu.in/surveys</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-	<loc>https://dfyu.in/contact</loc>
-	<lastmod>2025-05-03T05:22:39+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>https://dfyu.in/contact</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-	<loc>https://dfyu.in/certificate</loc>
-	<lastmod>2025-05-03T05:22:39+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>https://dfyu.in/certificate</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-	<loc>https://dfyu.in/posts/religions-or-war-debate-1</loc>
-	<lastmod>2025-05-03T05:22:39+01:00</lastmod>
-	<priority>0.8</priority>
+  <loc>https://dfyu.in/posts/religions-or-war-debate-1</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-	<loc>https://dfyu.in/surveys/bully-survey-1</loc>
-	<lastmod>2025-05-03T05:22:39+01:00</lastmod>
-	<priority>0.8</priority>
+  <loc>https://dfyu.in/posts/iphone-vs-android-debate-2</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://dfyu.in/posts/porn-friend-or-foe-debate-3</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dfyu.in/surveys/bully-survey-1</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dfyu.in/surveys/experiences-of-abuse-survey-2</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dfyu.in/surveys/attitudes-towards-elder-abuse-survey-3</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dfyu.in/surveys/punishment-for-rapists-survey-4</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dfyu.in/surveys/do-you-support-all-religion-survey-5</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dfyu.in/surveys/abuse-of-power-by-influencial-people-6</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dfyu.in/posts/india-pak-jammu-conflict</loc>
+  <lastmod>2025-05-16T13:13:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
