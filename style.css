@@ -602,3 +602,10 @@ button:hover {
   color: #eee;
   box-sizing: border-box;
 }
+
+.post-content h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222; /* or your preferred color */
+}
