@@ -227,14 +227,14 @@ html, body {
 }
 
 .footer .discord-icon {
-  color: #0077b6;
+  color: #73DDF7;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.2s;
 }
 
 .footer .discord-icon:hover {
-  color: #00b4d8;
+  color: #006073;
   text-decoration: underline;
 }
 
